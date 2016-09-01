@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: ef5816d468526b441be77f20ae78f8a1
+timeCreated: 1471566550
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: UI_001
+    100004: UI_002
+    100006: UI_003
+    100008: "\u0432\u0435\u0440\u0442\u0443\u0448\u043A\u0430"
+    100010: "\u043B\u0435\u0441\u0435\u043D\u043A\u04301-2"
+    100012: "\u043B\u0435\u0441\u0435\u043D\u043A\u04302-3"
+    100014: "\u043B\u0435\u0441\u0435\u043D\u043A\u04303-4"
+    100016: "\u043B\u0438\u0444\u0442"
+    100018: "\u043B\u0438\u0444\u04422"
+    100020: "\u0448\u0430\u0445\u0442\u04301"
+    100022: "\u0448\u0430\u0445\u0442\u04301_001"
+    100024: "\u0448\u0430\u0445\u0442\u04301_002"
+    100026: "\u0448\u0430\u0445\u0442\u04302"
+    100028: "\u0448\u0430\u0445\u0442\u04302_001"
+    100030: "\u0448\u0430\u0445\u0442\u04302_002"
+    100032: "\u0448\u0430\u0445\u0442\u04303"
+    100034: "\u0448\u0430\u0445\u0442\u04303_001"
+    100036: "\u0448\u0430\u0445\u0442\u04303_002"
+    100038: 2
+    100040: 3
+    100042: UI
+    400000: //RootNode
+    400002: UI_001
+    400004: UI_002
+    400006: UI_003
+    400008: "\u0432\u0435\u0440\u0442\u0443\u0448\u043A\u0430"
+    400010: "\u043B\u0435\u0441\u0435\u043D\u043A\u04301-2"
+    400012: "\u043B\u0435\u0441\u0435\u043D\u043A\u04302-3"
+    400014: "\u043B\u0435\u0441\u0435\u043D\u043A\u04303-4"
+    400016: "\u043B\u0438\u0444\u0442"
+    400018: "\u043B\u0438\u0444\u04422"
+    400020: "\u0448\u0430\u0445\u0442\u04301"
+    400022: "\u0448\u0430\u0445\u0442\u04301_001"
+    400024: "\u0448\u0430\u0445\u0442\u04301_002"
+    400026: "\u0448\u0430\u0445\u0442\u04302"
+    400028: "\u0448\u0430\u0445\u0442\u04302_001"
+    400030: "\u0448\u0430\u0445\u0442\u04302_002"
+    400032: "\u0448\u0430\u0445\u0442\u04303"
+    400034: "\u0448\u0430\u0445\u0442\u04303_001"
+    400036: "\u0448\u0430\u0445\u0442\u04303_002"
+    400038: 2
+    400040: 3
+    400042: UI
+    2300000: UI_001
+    2300002: UI_002
+    2300004: UI_003
+    2300006: "\u0432\u0435\u0440\u0442\u0443\u0448\u043A\u0430"
+    2300008: "\u043B\u0435\u0441\u0435\u043D\u043A\u04301-2"
+    2300010: "\u043B\u0435\u0441\u0435\u043D\u043A\u04302-3"
+    2300012: "\u043B\u0435\u0441\u0435\u043D\u043A\u04303-4"
+    2300014: "\u043B\u0438\u0444\u0442"
+    2300016: "\u043B\u0438\u0444\u04422"
+    2300018: "\u0448\u0430\u0445\u0442\u04301"
+    2300020: "\u0448\u0430\u0445\u0442\u04301_001"
+    2300022: "\u0448\u0430\u0445\u0442\u04301_002"
+    2300024: "\u0448\u0430\u0445\u0442\u04302"
+    2300026: "\u0448\u0430\u0445\u0442\u04302_001"
+    2300028: "\u0448\u0430\u0445\u0442\u04302_002"
+    2300030: "\u0448\u0430\u0445\u0442\u04303"
+    2300032: "\u0448\u0430\u0445\u0442\u04303_001"
+    2300034: "\u0448\u0430\u0445\u0442\u04303_002"
+    2300036: 2
+    2300038: 3
+    2300040: UI
+    3300000: UI_001
+    3300002: UI_002
+    3300004: UI_003
+    3300006: "\u0432\u0435\u0440\u0442\u0443\u0448\u043A\u0430"
+    3300008: "\u043B\u0435\u0441\u0435\u043D\u043A\u04301-2"
+    3300010: "\u043B\u0435\u0441\u0435\u043D\u043A\u04302-3"
+    3300012: "\u043B\u0435\u0441\u0435\u043D\u043A\u04303-4"
+    3300014: "\u043B\u0438\u0444\u0442"
+    3300016: "\u043B\u0438\u0444\u04422"
+    3300018: "\u0448\u0430\u0445\u0442\u04301"
+    3300020: "\u0448\u0430\u0445\u0442\u04301_001"
+    3300022: "\u0448\u0430\u0445\u0442\u04301_002"
+    3300024: "\u0448\u0430\u0445\u0442\u04302"
+    3300026: "\u0448\u0430\u0445\u0442\u04302_001"
+    3300028: "\u0448\u0430\u0445\u0442\u04302_002"
+    3300030: "\u0448\u0430\u0445\u0442\u04303"
+    3300032: "\u0448\u0430\u0445\u0442\u04303_001"
+    3300034: "\u0448\u0430\u0445\u0442\u04303_002"
+    3300036: 2
+    3300038: 3
+    3300040: UI
+    4300000: "\u043B\u0438\u0444\u04422"
+    4300002: "\u0448\u0430\u0445\u0442\u04303_002"
+    4300004: "\u0448\u0430\u0445\u0442\u04302_002"
+    4300006: "\u0448\u0430\u0445\u0442\u04301_002"
+    4300008: "\u0448\u0430\u0445\u0442\u04301_001"
+    4300010: "\u0448\u0430\u0445\u0442\u04302_001"
+    4300012: "\u0448\u0430\u0445\u0442\u04303_001"
+    4300014: "\u0448\u0430\u0445\u0442\u04303"
+    4300016: "\u0448\u0430\u0445\u0442\u04302"
+    4300018: "\u043B\u0435\u0441\u0435\u043D\u043A\u04303-4"
+    4300020: "\u043B\u0435\u0441\u0435\u043D\u043A\u04302-3"
+    4300022: "\u043B\u0438\u0444\u0442"
+    4300024: "\u0448\u0430\u0445\u0442\u04301"
+    4300026: "\u043B\u0435\u0441\u0435\u043D\u043A\u04301-2"
+    4300028: UI_001
+    4300030: UI_002
+    4300032: UI_003
+    4300034: "\u0432\u0435\u0440\u0442\u0443\u0448\u043A\u0430"
+    4300036: 2
+    4300038: 3
+    4300040: UI
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
