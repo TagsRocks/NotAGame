@@ -9,7 +9,7 @@ public class agentspawner : MonoBehaviour {
         GameObject[] points = GameObject.FindGameObjectsWithTag("room_goal");
         for (int i = 0; i < points.Length; i++)
         {
-             Instantiate(agent, points[i].transform.position, this.transform.rotation);
+             (Instantiate(agent, points[i].transform.position, this.transform.rotation)as GameObject).transform.parent = this.gameObject.transform;
             
         }
     }

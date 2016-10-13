@@ -261,5 +261,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_Jumping = false;
             }
         }
+
+        void OnCollisionEnter(Collision other)
+        {
+            Debug.Log("Entered "+other.gameObject.name);
+        }
+
+        void OnCollisionStay(Collision other)
+        {
+            Debug.Log("Stay "+other.gameObject.name);
+        }
+
+        void OnCollisionExit(Collision other)
+        {
+            Debug.Log("Exit "+other.gameObject.name);    
+        }
     }
 }

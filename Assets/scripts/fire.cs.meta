@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 71853e9c2c2d70e4dbc6fd0c71927f26
-timeCreated: 1475502065
+timeCreated: 1475699846
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - firego: {fileID: 173446, guid: 32330bbbfdfda5143a0ec1e71ae7c346, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
