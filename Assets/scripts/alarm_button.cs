@@ -10,17 +10,17 @@ public class alarm_button : MonoBehaviour {
 	
     void Alarm()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
         GameObject[] agent = GameObject.FindGameObjectsWithTag("agent");
         for(int i = 0; i < agent.Length; i ++)
         {
             agent[i].GetComponent<agentController>().evacuating = true;
-        }
+        }  
     }
 
 	// Update is called once per frame
 	void Update () {
-
-        if (Time.time > 10f && Time.time < 11f) Alarm();
 	
 	}
 }
