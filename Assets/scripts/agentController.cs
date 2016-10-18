@@ -7,8 +7,6 @@ public class agentController : MonoBehaviour {
     private GameObject[] exits, rooms;
     public bool evacuating = false;
     private bool got;
-    public Material[] materials = new Material[3]; 
-
 
     void Start()
     {
@@ -21,12 +19,6 @@ public class agentController : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "fire") Destroy(this.gameObject);
-        if (col.tag == "agent" && col.GetComponent<agentController>().evacuating) {
-            this.evacuating = true;
-            got = true;
-            findExitGoal();
-            ChangeMat(3);
-        }
     }
 
     void findNewRoomGoal()
@@ -57,21 +49,11 @@ public class agentController : MonoBehaviour {
         return (transform.position - goal.transform.position).magnitude <= 3f;
     }
     // Update is called once per frame
-
-    void ChangeMat(int m){
-       // this.GetComponent<SkinnedMeshRenderer>().material = materials[m];
-        this.GetComponentInChildren<SkinnedMeshRenderer>().material = materials[m];
-        
-    }   
- void Update () {
-        
+    void Update () {
         if (evacuating)
         {
-           
-            if(!got){
-                findExitGoal();
-                 ChangeMat(2);
-            }
+            if(!got)
+            findExitGoal();
         }
         else
         {

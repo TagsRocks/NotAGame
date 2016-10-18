@@ -7,8 +7,6 @@ public class fire : MonoBehaviour {
     private float time = 0;
     private float lifetime = 2;
     public GameObject starter;
-
-    
 	// Use this for initialization
 	void Start () {
         if((transform.position.z < -5 || transform.position.z > 45) && ( transform.position.x > -95 )){
@@ -23,13 +21,13 @@ public class fire : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider col){
-    
+        if (col.tag == "fire" && (col.transform.position-this.transform.position).magnitude < 5f){
+             Destroy(this.gameObject);
+        }
     }
 
     // Update is called once per frame
     void Update () {
-
-    /*   
         time += Time.deltaTime;
         if(time > timer)
         {   
@@ -42,6 +40,5 @@ public class fire : MonoBehaviour {
         {
             extinguish();
         }
-    */
 	}
 }

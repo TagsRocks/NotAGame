@@ -54,7 +54,6 @@
      <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-     <Compile Include="Assets\scripts\GUI_stuff.cs" />
      <Compile Include="Assets\scripts\agentController.cs" />
      <Compile Include="Assets\scripts\agentspawner.cs" />
      <Compile Include="Assets\scripts\alarm_button.cs" />
@@ -62,7 +61,6 @@
      <Compile Include="Assets\scripts\fire.cs" />
      <Compile Include="Assets\scripts\fire_destroyer.cs" />
      <Compile Include="Assets\scripts\firestarter.cs" />
-     <Compile Include="Assets\scripts\player_actions.cs" />
      <Compile Include="Assets\scripts\temp\blankBodyHorizontalMove.cs" />
      <Compile Include="Assets\scripts\temp\blankCameraVerticalMove.cs" />
      <Compile Include="Assets\scripts\temp\blankCharacterController.cs" />
