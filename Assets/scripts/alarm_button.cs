@@ -17,6 +17,7 @@ public class alarm_button : MonoBehaviour {
         {
             agent[i].GetComponent<agentController>().evacuating = true;
         }  
+        GameObject.FindGameObjectWithTag("builder").GetComponent<Builder>().Score += 200;
     }
 
 	// Update is called once per frame

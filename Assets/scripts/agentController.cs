@@ -6,7 +6,7 @@ public class agentController : MonoBehaviour {
     private NavMeshAgent agent;
     private GameObject[] exits, rooms;
     public bool evacuating = false;
-    private bool got;
+    private bool got, infire;
     public Material[] materials = new Material[3]; 
 
 
@@ -20,7 +20,12 @@ public class agentController : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "fire") Destroy(this.gameObject);
+        if (col.tag == "fire") 
+            if(infire){
+                Destroy(this.gameObject);
+            } else {
+                infire = true;
+            }
         if (col.tag == "agent" && col.GetComponent<agentController>().evacuating) {
             this.evacuating = true;
             got = true;
@@ -29,9 +34,30 @@ public class agentController : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// OnTriggerStay is called once per frame for every Collider other
+    /// that is touching the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    void OnTriggerStay(Collider other)
+    {   
+        
+    }
+
+    /// <summary>
+    /// OnTriggerExit is called when the Collider other has stopped touching the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag.Equals("fire")) {
+			infire = false;
+		}
+    }
+
     void findNewRoomGoal()
     {
-        goal = rooms[Random.Range(0, GameObject.FindGameObjectsWithTag("agentGoal").Length)].transform;
+        goal = rooms[Random.Range(0, rooms.Length)].transform;
         agent.destination = goal.position;
     }
 

@@ -2,15 +2,29 @@
 using System.Collections;
 
 public class player_actions : MonoBehaviour {
-
+	public GameObject builder;
 	// Use this for initialization
 	void Start () {
-	
+		builder = GameObject.FindGameObjectWithTag("builder");	
 	}
 	
 	void OnTriggerEnter(Collider other)
 	{
-		
+		if(other.tag.Equals("elevator")){
+			if(GameObject.FindGameObjectsWithTag("fire").Length > 0){
+				Debug.Log("GAME OVER");
+				builder.SendMessage("Loss");
+			}
+		}
+		if(other.tag.Equals("fire")){
+			builder.SendMessage("Loss");
+		}
+
+
+		if(other.tag.Equals("exit_goal")){
+			builder.SendMessage("Won");
+			Debug.Log("YO WON");
+		}
 	}
 
 	/// <summary>
@@ -21,6 +35,7 @@ public class player_actions : MonoBehaviour {
 	void OnTriggerStay(Collider other)
 	{
 		if(other.tag.Equals("elevator")){
+
 			if(Input.GetKeyDown(KeyCode.Alpha1)){
 				other.SendMessage("go1");
 			}
@@ -46,12 +61,37 @@ public class player_actions : MonoBehaviour {
 	/// </summary>
 	/// <param name="other">The other Collider involved in this collision.</param>
 	void OnTriggerExit(Collider other)
-	{
+	{	
+		
 		
 	}
-
+	private bool call = false;
+	private string str = "";
 	// Update is called once per frame
 	void Update () {
-	
+		if(call) {
+			string inp = Input.inputString;
+			if(inp.Equals(" ")) {
+				if (str.Equals("112"))
+					str = "Well done";
+					GameObject.FindGameObjectWithTag("builder").GetComponent<Builder>().Score += 150;
+			}
+			str += inp;
+		}
+		if(Input.GetKeyDown(KeyCode.P)){
+			call = !call;
+			str = "";
+		}
+
+
+	}
+
+	/// <summary>
+	/// OnGUI is called for rendering and handling GUI events.
+	/// This function can be called multiple times per frame (one call per event).
+	/// </summary>
+	void OnGUI()
+	{
+		GUILayout.Label(str);
 	}
 }

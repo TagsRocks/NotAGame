@@ -28,6 +28,7 @@ public class fire : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        transform.localScale += new Vector3(.05f,.05f,.05f)*Time.deltaTime;
 
     /*   
         time += Time.deltaTime;

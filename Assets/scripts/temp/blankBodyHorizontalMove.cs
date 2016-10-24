@@ -10,6 +10,7 @@ public class blankBodyHorizontalMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		originalRotation = transform.localRotation;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame
