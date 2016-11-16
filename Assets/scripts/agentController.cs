@@ -20,18 +20,21 @@ public class agentController : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "fire") 
+        if (col.tag.Equals("fire"))
             if(infire){
                 Destroy(this.gameObject);
             } else {
                 infire = true;
             }
-        if (col.tag == "agent" && col.GetComponent<agentController>().evacuating) {
+        if (col.tag.Equals("agent") && col.GetComponent<agentController>().evacuating) {
             this.evacuating = true;
             got = true;
             findExitGoal();
             ChangeMat(3);
         }
+        if(col.tag.Equals("door")) {
+            col.SendMessage("Open");
+		}
     }
 
     /// <summary>

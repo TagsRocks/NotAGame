@@ -12,8 +12,7 @@ public class player_actions : MonoBehaviour {
 	{
 		if(other.tag.Equals("elevator")){
 			if(GameObject.FindGameObjectsWithTag("fire").Length > 0){
-				Debug.Log("GAME OVER");
-				builder.SendMessage("Loss");
+				builder.SendMessage("elev");
 			}
 		}
 		if(other.tag.Equals("fire")){
@@ -54,6 +53,11 @@ public class player_actions : MonoBehaviour {
 				other.SendMessage("Alarm");
 			}
 		}
+		if(other.tag.Equals("door")) {
+			if(Input.GetKeyDown(KeyCode.E)){
+				other.SendMessage("Open");
+			}
+		}
 	}
 
 	/// <summary>
@@ -70,11 +74,13 @@ public class player_actions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(call) {
+			builder.SendMessage("Call", 2);
 			string inp = Input.inputString;
 			if(inp.Equals(" ")) {
 				if (str.Equals("112"))
 					str = "Well done";
 					GameObject.FindGameObjectWithTag("builder").GetComponent<Builder>().Score += 150;
+					builder.SendMessage("Call", 1);
 			}
 			str += inp;
 		}
