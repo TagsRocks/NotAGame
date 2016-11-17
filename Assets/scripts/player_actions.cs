@@ -98,16 +98,27 @@ public class player_actions : MonoBehaviour {
 			str = (!call)?("Press P to call any number"):("");
 		}
 
+		if(Input.GetKeyDown(KeyCode.F)) {
+			if(Cursor.lockState.Equals(CursorLockMode.None)) {
+				Cursor.lockState = CursorLockMode.Locked;	
+			} else {
+				Cursor.lockState = CursorLockMode.None;
+			}
+		}
+
 
 	}
 
+
+	public GUISkin skin;
 	/// <summary>
 	/// OnGUI is called for rendering and handling GUI events.
 	/// This function can be called multiple times per frame (one call per event).
 	/// </summary>
 	void OnGUI()
 	{
-		GUILayout.Label(str + "\n" + alarmAlarm);
+		GUI.skin = skin; 
+		GUILayout.Label(str + "\n" + alarmAlarm, "giuSkin");
 
 	}
 }

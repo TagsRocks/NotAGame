@@ -14,7 +14,8 @@ public class Builder : MonoBehaviour {
 	public GameObject WIN,DIED;
 
 	bool win, elevator;
-	int call, startp, endp, time;
+	int call, startp, time;
+	string endp;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +36,7 @@ public class Builder : MonoBehaviour {
 
 	void Won(string str){
 		win = true;		
-		endp = int.Parse(str);
+		endp = str;
 		MakeLogs();
 		Destroy(building.gameObject);
 		Destroy(npcs.gameObject);
