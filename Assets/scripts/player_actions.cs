@@ -21,8 +21,12 @@ public class player_actions : MonoBehaviour {
 
 
 		if(other.tag.Equals("exit_goal")){
-			builder.SendMessage("Won");
+			builder.SendMessage("Won", other.name);
 			Debug.Log("YO WON");
+		}
+		
+		if(other.tag.Equals("alarm_button")){
+			alarmAlarm = "Press E to activate alarm button";
 		}
 	}
 
@@ -66,11 +70,15 @@ public class player_actions : MonoBehaviour {
 	/// <param name="other">The other Collider involved in this collision.</param>
 	void OnTriggerExit(Collider other)
 	{	
-		
+		if(other.tag.Equals("alarm_button")){
+			alarmAlarm = "";
+		}
 		
 	}
 	private bool call = false;
-	private string str = "";
+	private string str = "Press P to call any number";
+
+	private string alarmAlarm = "";
 	// Update is called once per frame
 	void Update () {
 		if(call) {
@@ -86,7 +94,8 @@ public class player_actions : MonoBehaviour {
 		}
 		if(Input.GetKeyDown(KeyCode.P)){
 			call = !call;
-			str = "";
+
+			str = (!call)?("Press P to call any number"):("");
 		}
 
 
@@ -98,6 +107,7 @@ public class player_actions : MonoBehaviour {
 	/// </summary>
 	void OnGUI()
 	{
-		GUILayout.Label(str);
+		GUILayout.Label(str + "\n" + alarmAlarm);
+
 	}
 }

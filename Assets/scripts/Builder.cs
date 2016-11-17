@@ -33,8 +33,9 @@ public class Builder : MonoBehaviour {
 		Time.timeScale = 1f;
 	}
 
-	void Won(){
+	void Won(string str){
 		win = true;		
+		endp = int.Parse(str);
 		MakeLogs();
 		Destroy(building.gameObject);
 		Destroy(npcs.gameObject);
@@ -68,8 +69,6 @@ public class Builder : MonoBehaviour {
 		data += startp + "_";
 		data += endp + "_";
 		data += Time.time + "_";
-		//File.Create(path);
-		//Debug.Log("created");
 		File.WriteAllText(path, data);
 		Debug.Log("write");
 		
