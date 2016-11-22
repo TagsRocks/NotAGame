@@ -15,7 +15,7 @@ public class GUI_stuff : MonoBehaviour {
 	void OnGUI()
 	{
 		GUI.Label(new Rect(Screen.width/5, Screen.height/3, 500, 500), Score);
-		GUI.Label(new Rect(Screen.width/5, Screen.height/3+20, 500, 500), "Time:   " + Time.time.ToString());
+		//GUI.Label(new Rect(Screen.width/5, Screen.height/3+20, 500, 500), "Time:   " + Time.time.ToString());
 	}
 	// Update is called once per frame
 	void Update () {
